@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- <meta name="viewport" content="width=1050"/> -->
+<meta name="author" content=""/>
+<title></title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="icon.png" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<style>
+	/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+	@import url(http://fonts.googleapis.com/css?family=Neuton);
+	@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+	/* reset */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;}
+	fieldset,img{border:0 none}
+	dl,ul,ol,menu,li {list-style:none}
+	blockquote, q {quotes: none}
+	blockquote:before, blockquote:after,q:before, q:after {content: '';content: none}
+	input,select,textarea,button {vertical-align:middle}
+	button {border:0 none;background-color:transparent;cursor:pointer}
+	body,th,td,input,select,textarea,button,a {font-family:'Neuton',Dotum,"Lucida Grande", Helvetica, Verdana, sans-serif;}
+	a {color:#000; text-decoration: none;font-size: 12px}
+	a:hover {color:#6600FF;}
+	h1,h2,h3,h4 {font-weight: normal;}
+	
+	/* #wrap {background:#FFFBF4} */
+	html {overflow-y:scroll;}
+	div,p,li,a {word-break: break-all;}
+	.thum {position:relative;width:90%;padding-top:100px;margin:0 auto;}
+	.thum .divider {float:left;color:#333;}
+	.thum .divider.one {width:96%;margin:0 2% 4%;}
+	.thum .divider.two {width:46%;margin:0 2% 4%;}
+	.thum .divider.four {width:46%;margin:0 2% 4%;}
+	.thum h1 {font-size:24px;font-weight:bold;}
+	.thum .divider .box {font-size:14px;}
+	.thum .divider .box.img img {width:100%;height:auto;}
+	.thum .divider .box h2 {padding-bottom:10px;font-size:16px;font-weight:bold;}
+	.thum .divider .box a {color:#1255CC;}
+	.top {}
+	.top .menu {padding: 3% 2%;overflow:hidden}
+	.top .menu li {float:left;padding-right:20px;}
+	.top .menu li a {padding-bottom:5px;border-bottom:1px solid #333;}
+	.user {font-size:14px;}
+	.thum .right {clear:both;}
+	.thum .right address {font-size:12px;}
+
+	/* automatic thumbnail */
+	@media all and (min-width:400px){
+		.thum {width:80%}
+		.thum .left {position:absolute;left:-30px;top:100%;width:30px;}
+		.thum .left h1 {-webkit-writing-mode:vertical-rl;
+			-moz-writing-mode:vertical-rl;
+			-o-writing-mode:vertical-rl;
+			writing-mode:vertical-rl;
+						/* -webkit-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+						-moz-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+						-o-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+						transform: rotate(45deg) scale(1) skew(1deg) translate(0px); */}
+		.thum .right {position:absolute;right:-40px;top:100%;width:30px;}
+		.thum .right address {-webkit-writing-mode:vertical-rl;
+			-moz-writing-mode:vertical-rl;
+			-o-writing-mode:vertical-rl;
+			writing-mode:vertical-rl;}
+	}
+	@media all and (min-width:900px){
+	}
+
+	/* tablet and desktop */
+	@media all and (min-width:768px){
+		.thum {width:50%}
+	}
+
+	/* tablet */
+	@media all and (min-width:768px) and (max-width:1024px) {
+	}
+
+	/* desktop */
+	@media all and (min-width:1025px) {	
+		.thum .divider.four {width:21%;min-height:140px;}	
+	}
+	@media all and (min-width:1281px) {
+		.thum {width:40%;}
+	}
+	@media all and (min-width:1601px) {
+		.thum {width:34%;}
+	}
+</style>
+<script>
+$(function(){
+});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div>
+		<div class="left"></div>
+		<div class="thum">
+			<!-- <li>
+				<h1>Ambiguous<br> numbers<br> Configuration</h1>
+			</li>
+			<li class="user">
+				baninana@naver.com
+				<br>+821048440424
+				<br>Seoul, Korea
+			</li>
+			<li></li>
+			<li></li> -->
+			<div class="left">
+				<h1>AMBIGUOUS NUMBERS CONFIGURATION</h1>
+			</div>
+			<div class="top">
+				<ul class="menu">
+					<li><a href="index.html">1</a></li>
+					<li><a href="embroidery.html">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="divider four" style="background:#f8f8f8">
+				<div class="box">
+					
+				</div>
+			</div>
+			<div class="right">
+				<address>&copy;	2014 <a href="mailto:baninana@naver.com">SOM</a> All Right Reserved. Theme by SOM</address>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
